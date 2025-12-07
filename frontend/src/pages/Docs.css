@@ -1,0 +1,211 @@
+.docs-page {
+  min-height: 100vh;
+  background: var(--color-bg);
+  padding: 4rem 2rem;
+  transition: background 0.3s ease;
+}
+
+.docs-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.docs-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.docs-header h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  color: var(--color-text);
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.docs-subtitle {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  color: var(--color-text-muted);
+  transition: color 0.3s ease;
+}
+
+.docs-section {
+  background: var(--color-bg-card);
+  border-radius: 18px;
+  padding: 2.5rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+[data-theme="dark"] .docs-section {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+.docs-section h2 {
+  font-family: 'Inter', sans-serif;
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--color-text);
+  margin-bottom: 2rem;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid var(--color-border);
+  transition: color 0.3s ease, border-color 0.3s ease;
+}
+
+.docs-section h3 {
+  font-family: 'Inter', sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--color-text);
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  transition: color 0.3s ease;
+}
+
+.endpoint-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.endpoint-card {
+  background: var(--color-bg);
+  border-radius: 12px;
+  padding: 1.5rem;
+  border: 1px solid var(--color-border);
+  transition: all 0.3s ease;
+}
+
+.endpoint-card:hover {
+  border-color: var(--color-primary);
+  box-shadow: 0 4px 12px rgba(108, 92, 231, 0.1);
+}
+
+[data-theme="dark"] .endpoint-card:hover {
+  box-shadow: 0 4px 12px rgba(122, 208, 204, 0.2);
+}
+
+.endpoint-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.method {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.25rem 0.75rem;
+  border-radius: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.method-get {
+  background: rgba(23, 190, 187, 0.1);
+  color: #17BEBB;
+}
+
+.method-post {
+  background: rgba(108, 92, 231, 0.1);
+  color: #6C5CE7;
+}
+
+.method-put {
+  background: rgba(255, 193, 7, 0.1);
+  color: #FFC107;
+}
+
+.method-delete {
+  background: rgba(239, 68, 68, 0.1);
+  color: #EF4444;
+}
+
+.endpoint-path {
+  font-family: 'Courier New', monospace;
+  font-size: 1rem;
+  color: #0F172A;
+  background: #FFFFFF;
+  padding: 0.5rem 1rem;
+  border-radius: 6px;
+  border: 1px solid #E2E8F0;
+}
+
+.endpoint-description {
+  font-family: 'Inter', sans-serif;
+  color: #64748B;
+  margin-bottom: 1rem;
+}
+
+.endpoint-example {
+  margin-top: 1rem;
+}
+
+.endpoint-example strong {
+  font-family: 'Inter', sans-serif;
+  font-size: 0.875rem;
+  color: #0F172A;
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+.endpoint-example pre {
+  background: #0F172A;
+  color: #E2E8F0;
+  padding: 1rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
+  line-height: 1.6;
+}
+
+.integration-content {
+  font-family: 'Inter', sans-serif;
+}
+
+.base-url {
+  display: block;
+  background: var(--color-bg);
+  padding: 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--color-border);
+  font-family: 'Courier New', monospace;
+  font-size: 0.95rem;
+  color: var(--color-primary);
+  margin: 1rem 0 2rem 0;
+  word-break: break-all;
+  transition: all 0.3s ease;
+}
+
+.code-block {
+  background: #0F172A;
+  color: #E2E8F0;
+  padding: 1.5rem;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: 'Courier New', monospace;
+  font-size: 0.875rem;
+  line-height: 1.6;
+  margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+  .docs-page {
+    padding: 2rem 1rem;
+  }
+
+  .docs-section {
+    padding: 1.5rem;
+  }
+
+  .endpoint-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+

@@ -1,0 +1,21 @@
+{
+  "name": "aws-webapp-backend",
+  "version": "1.0.0",
+  "description": "Lambda functions for AWS Web Application",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1499.0"
+  },
+  "keywords": [
+    "aws",
+    "lambda",
+    "dynamodb"
+  ],
+  "author": "",
+  "license": "ISC"
+}
+
+

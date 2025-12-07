@@ -1,0 +1,25 @@
+{
+  "name": "aws-fullstack-webapp",
+  "version": "1.0.0",
+  "description": "Production-ready AWS full-stack application with React, Lambda, API Gateway, and DynamoDB",
+  "scripts": {
+    "install-frontend": "cd frontend && npm install",
+    "install-backend": "cd backend && npm install",
+    "install-all": "npm run install-frontend && npm run install-backend",
+    "start": "cd frontend && npm start",
+    "build": "cd frontend && npm run build"
+  },
+  "keywords": [
+    "aws",
+    "react",
+    "lambda",
+    "api-gateway",
+    "dynamodb",
+    "amplify",
+    "serverless"
+  ],
+  "author": "",
+  "license": "ISC"
+}
+
+
